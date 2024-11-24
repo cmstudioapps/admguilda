@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Admin Guilda JK</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="app.json">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+  
+
+  </script>
+</head>
+<body>
+  <div id="painel-container">
+    <h2 id="titulo-painel">Painel Administrativo Guilda JK</h2>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" placeholder="Digite seu e-mail">
+    <br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" placeholder="Digite sua senha">
+
+    <br><hr>
+
+    <label for="imagem">Escolher Imagem:</label>
+    <input type="file" id="imagem" name="imagem" accept="image/*">
+
+    <label for="legenda">Legenda da Imagem:</label>
+    <textarea id="legenda" name="legenda" placeholder="Escreva a legenda da imagem..."></textarea>
+
+    <label for="link">Link:</label>
+    <input type="url" id="link" name="link" placeholder="Insira o link...">
+
+    <select name="" id="visivel">
+
+      <option value="none" selected>Esconder botão saiba mais.</option>
+      <option value="block">Mostrar botão de saiba mais.</option>
+
+
+    </select>
+    <button onclick="enviar()" id="botao-enviar">Enviar</button>
+    <button id="delete" onclick="deletar()">Deletar um post</button>
+  <br><br>
+  <a href="https://dashboard.onesignal.com/apps?page=1">Enviar notificações</a>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

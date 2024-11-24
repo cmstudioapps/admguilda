@@ -1,0 +1,115 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #121212; /* Fundo escuro estilo gamer */
+  color: #fff; /* Texto branco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Painel administrativo */
+#painel-container {
+  background: linear-gradient(145deg, #1e1e1e, #292929);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  width: 90%;
+  max-width: 400px;
+}
+
+#titulo-painel {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00bfff; /* Azul neon gamer */
+  text-shadow: 0 0 10px #00bfff, 0 0 20px #0074d9;
+}
+
+/* Inputs e botões */
+label {
+  font-size: 0.9rem;
+  color: #ccc;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #00bfff;
+  box-shadow: 0 0 5px #00bfff;
+}
+
+/* Botões */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #00bfff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background: #0074d9;
+  box-shadow: 0 0 10px #00bfff, 0 0 20px #0074d9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Links */
+a {
+  display: inline-block;
+  text-align: center;
+  color: #00bfff;
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+a:hover {
+  text-shadow: 0 0 5px #00bfff, 0 0 10px #0074d9;
+}
+
+/* Dropdown */
+select {
+  appearance: none;
+  cursor: pointer;
+  background: #1a1a1a url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%2210%22 height%3D%2210%22 viewBox%3D%220 0 10 10%22%3E%3Cpath fill%3D%22%23fff%22 d%3D%22M0 3l5 5 5-5z%22/%3E%3C/svg%3E') no-repeat right 10px center;
+  background-size: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #painel-container {
+    width: 95%;
+  }
+}
